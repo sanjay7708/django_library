@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <div class="log">
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" value="submit">Login</button>
+                <a href="regiter.html">New User?</a>
+            </form>
+        </div>
+    </body>
+</html>
